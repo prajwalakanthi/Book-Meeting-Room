@@ -1,0 +1,18 @@
+[
+    {
+        "username":"Test #1",
+        "agenda":"Some Text #",
+        "date":"2024-12-06",
+        "time":"12:00 PM:12:30 PM",
+        "room":"Meeting Room #1",
+        "id":"1"
+    },
+    {
+        "username":"Test #2",
+        "agenda":"Some Text #",
+        "date":"2024-12-06",
+        "time":"03:00 PM:04:00 PM",
+        "room":"Meeting Room #2",
+        "id":"2"
+    }
+]

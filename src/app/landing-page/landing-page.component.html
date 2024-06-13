@@ -1,0 +1,23 @@
+<div class="nav-header">
+  <h1 class="header-one">Book Room Meeting</h1>
+  <h4 class="header-two">{{userName}}</h4>
+  <h4 class="header-three" (click)="logout()">Log Out</h4>
+</div>
+<div class="main"> 
+<button mat-raised-button color="primary" class="book-btn" (click)="openDialog()">Book Meeting </button>
+<div class="upcoming-meeetins">
+    <h3>Your Upcoming Meetings</h3>
+    <app-meeting-details-table [dataSource]="getUpcomingDataSource()" [deletEnabled]=true (emitId)="deleteData($event)"></app-meeting-details-table>
+</div>
+<div class="room-meeetins">
+    <h3>Rooms Meeting Details</h3>
+    <h5>Select Meeting Room</h5>
+<mat-form-field class="select-room">
+  <mat-label>Choose an option</mat-label>
+  <mat-select (selectionChange)="getRoomDetailsOnchange($event)">
+    <mat-option *ngFor="let option of getRoomNames()" [value]="option">{{option}}</mat-option>
+  </mat-select>
+</mat-form-field>
+    <app-meeting-details-table [dataSource]="getBookedMeetingRooms" [deletEnabled]=false></app-meeting-details-table>
+</div>
+</div>

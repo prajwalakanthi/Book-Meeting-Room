@@ -1,0 +1,56 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;    
+}
+
+.date-range-select{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    height: 66px;
+}
+.text-colour{
+    color: red!important;
+}
+
+.select-room{
+    position:relative;
+    top: 10px;
+}
+
+.btn-book{
+    width: 20%;
+}
+.btn-cancel{
+    width: 3%;
+    height: 5%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    column-gap: 80%;
+}
+.time-icon{
+    position: relative;
+    left:93%;
+    top:-1.5rem;
+}
+
+
+.form-field-style{ 
+    margin-left: 10px;
+    ::ng-deep .mdc-notched-outline{
+    height: 65% !important;
+}
+}
+::ng-deep .mat-mdc-autocomplete-panel.mat-mdc-autocomplete-visible {
+    position: relative;
+    top:-30px;
+    }
+
+    .select-rooms{
+        display: flex;
+        flex-direction: column;
+    }
