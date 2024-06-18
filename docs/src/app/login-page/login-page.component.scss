@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top:20px;
+  }
+  
+ 
+  form {
+    width: 300px; 
+    position: relative;
+    top: 34px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-error{
+    color: red;
+    position: relative;
+    top: 2rem;
+  }
