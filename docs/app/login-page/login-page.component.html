@@ -1,0 +1,17 @@
+<div class="container ">
+<div>
+<h2>BOOK A MEETING ROOM</h2>
+</div>
+<form [formGroup]="loginForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="username">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" type="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="login()">Login</button>
+  </form>
+  <p class="text-error" *ngIf="invalidUser">**Please enter valid username/paasword**</p>
+</div>
